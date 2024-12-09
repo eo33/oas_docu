@@ -1,0 +1,63 @@
+---
+id: validate-api-key
+title: "Validate API key"
+description: "This endpoint allows you to validate your API key."
+sidebar_label: "Validate API key"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVU2P2zYQ/SvEXAosFNktkotuDpAUixboIrvtZWsgNDWymEikwhk6cQX992JIy+uvBYr6YNOar8eZN08j1Egm2IGtd1DBU2tJoasHbx0r3XX+O6m9j4q92unO1ppR/ge1erhXX3FfQgGstwTVM6wit7AugNDEYHkP1fMIq4f731CO62ldQEAavCMkqEb4ZbmUn3MEj9EYJGpip2bnUn1CjsGR0k75zRc0rIx3rK2zbqusa3zotcSrgJ1mrAUut6giYfiJlE4p1RDszna4RQEtCdCxANDD0FmTEiy+kKAYgUyLvZYT7weECnJdKGAIfsDANt9BR27RsYTjiffG+w61g+LidveuTq6kvrfILYYjTGVJnSary50O1r9Mg8q/3Rv1mWPAz5V6ejUseTW6o0s35/nKFaYCdN1b9x+wPw5obGORlG0S7LNkuUyrSaV8ljhotjt86TqV6r5JZGr1DrPbibVIJqOd6vVXVAG/RSQmGWVyfeNdt7/qRohn1zzWPy17uyO1x9yTMzT4EgTTVAD+0P3Q4fWopfKxdyn5JJ8C3t5kNaLqkUhvUZ1YSun/u1sB9GrAVECP3PoaKthiYqTmFipYCMDFvKUgexh2GCitYQwdVNAyD1QtFtxiE4OzQqZN8FQa31/N+yH4Opq0VjkTTMVlos4b3bWeuHq3XC6vUvwu5mP0iTQ8ynrlDZoF4sg/PVh5UIB0FlrUNQYowOlerCIyPth/0rrewryz9YVEHUYpOnHd6KR4je1wlhRK3P5jQCfxlEmf1YFU4/PGrow30bGUIOUbdXcnvPo491S9D57u7pI4Whb6wLVdrYzxkmSu9XhWCwqQ6WWUP5fLcilkGTxxr9O6Hhry1yzLh+te9mR8kbr/Ke95LIw/eDF02ibRSDQYD9R7TrshgGfyrQsQVohpHDea8M/QTZM8/hYxpNeBeAerN9Kd5/VUzJMWtso1KlgZgwPntDEz40KohVLHZfj1wxMUGckZmXJPDgfJPpvc/iT3Ja8yBPkW1t8MGcdM1Wk6+mfTqxFHMmdvaeV6mqZ/AVKqn5w=
+sidebar_class_name: "get api-method"
+info_path: account/the-furniture-bros-account-openapi-specifications
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Validate API key"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/auth/validate"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows you to validate your API key.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful response. Returns an object containing information related to the user's access privilege.","content":{"application/json":{"schema":{"type":"object","properties":{"authenticate":{"type":"boolean","description":"Indicates whether the user is authenticated.varios endpoints.\n- `ture`: The user is authenticated.\n- `false`: The user is not authenticated.\n"},"admin":{"type":"boolean","description":"Specifies if the authenticated user has administrative privileges. If you have admin privileges, you can make requests to admin-only endpoints.\n- `true`: The user has admin privileges.\n- `false`: The user does not have admin previleges.\n"}},"example":{"authenticate":true,"admin":false}}}}},"400":{"description":"See message description."},"500":{"description":"see message description."}}}
+>
+  
+</StatusCodes>
+
+
+      

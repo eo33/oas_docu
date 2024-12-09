@@ -1,0 +1,71 @@
+---
+id: edit-user-details
+title: "Edit User Details"
+description: "This endpoint allows you to edit a user's details. This requires admin privileges."
+sidebar_label: "Edit User Details"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVm1v2zYQ/ivEocCAQLOdtEkzfZr7tnrdWqNpFxSpkdDSSWIrkSqPsuMZ+u/DUbItx0oXYBvmD4ZA3j3k3XPP8dYQI0VWlU4ZDSF8yBQJ1HFplHZC5rlZkliZSjgjMFZOSFER2h9IxOikymkgvIvFb5WySELGhdKitGqhckyRBhCAkylBeAXjymUQwEdCSzALgDCqrHIrCK/WMJ5O3iB/goeAWT0LgGGR3DMTryBc37nrWAsz/4KRE5HRTiqtdCpchkLjcnu9zxoaGGUxhtDZCgNge9SOIWVZ5iqSDDn8Qoy7BooyLCR/uVWJEEJzDARQWlOidQqJdzkTk7hjR84qnUJwkFT0WROTF8Ik/ooyikylHae1MLFKVgPxWX8ylYikFik6b5Qrcuyw8Z2vREWbIG+m7y4+iCHv0TBFdy3zfLguZYr1zZZBDr8OQOPyrSzwYTfl7GlZoEiM9SfxETugl4VUeR9SYmwhHYSA3uI+aL97D/aYmb9w0lXUOWFuTI5S34vYlBx5t31g8Vn/KG6Y85tQbFnIZE+ZestE5rRnGhskoY0TmVzg1gl3TlDXAeCtLMocuyUBZ0+fnI1O5Yk8Po9Oksfnycnxk/Oz0TF02IBfpUbxwiB0MwtfpMbrFvPnlBcHkSngMEMcWM0/rnAqjaamLk9Go0O1XFRRhERJlYuN8UC8R1dZTUL2SclnQOmGV2U0S/lfVE6f1SHBpbSyQIeWe0wuHcasmR3DvvukaoHUvaqQc1O5vQq7e4Vr9UDl7kTbLdaHy4mldAiA/0BGjYRkHFsk6sEuJdHS2AfGhzqyq5ITu/HrgWx68sM06W0VOevUAnca60G9vl50MJV2mKLtxVygJea1iyG6G0pHFiUhiWWGGhdo9/qsoqbPKowb1fbodlsV3xXvgXLx72S7owMenchHx6NHKNXtx9PB68fTV58uBz/9cfb29/PxYDx4PtWvXrt5dDm9pHI4OX57Scntt8kvZ3T+9A1sWfBtqs3eqG47wJNe0SOKAolkiqKzM+Dkn/Y50L0OdQAFusxwGKUhr2npMgihfYN4PAB+1C1z4t/0ynJiMudKCodDl2FSWa1cZXFuDbXp2b/A1Jq4iryGGySog7tAuYlknhly4eloNDqA+I23t96dOeOCu1Oj/s20sS0+WSpeCIATDBnK2FdiSzdPLsaqP31z6bvzQsXIc5IV4+lEfMXV5m3gzvh+N8W8/D+fCg4uMYek+x6aqBw33Z+8dt6VqDkaKjFSSdvqdy/sODIRS2s8nfgmdHTEeny1YVg8s4aOjvz8pxyHDIf7Ytzqc3PWxd5ZEECrbwjheDAajHx7M+QK6btRS89Lnkx5rBQvmrHvLkXr3cP1H424TRU5vHXDMpfKtzdftetWJleecL6ZF8osAK5gXl+v55Lwo83rmpe/VWh5Dp4FsJBWyTnn7mpWB5uqZGV95eKF501QP37g09k8r5pavvMys4Qaj3EUYem+azvrCJ1nTAhg3s7fhYnZx8olD9VyCSFAAKZsyArXzdoacqnTSqZs22CyEiRP/3uC++oF135wVJstverc8K72mkD4n8PqdVmvGznX9da+2brXYyv4xpr5m9V1/ReSk3+D
+sidebar_class_name: "post api-method"
+info_path: account/the-furniture-bros-account-openapi-specifications
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Edit User Details"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/users/edit"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows you to edit a user's details. This requires admin privileges.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"An object containing the new details.\n","required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"userId":{"type":"string","description":"The user ID of the account to modify. \nYou can get the list of user ID by using the `POST /users/get_all/{page}` endpoint.\n"},"newName":{"type":"string","description":"The new name for the user.\n"},"newEmail":{"type":"string","format":"email","description":"The new email for the user.\n"},"newAdminStatus":{"type":"boolean","description":"The new admin status for the user. \n- `true`: The user has admin privileges.\n- `false`: The user does not have admin previleges.\n"}},"example":{"userId":"674605a2a18c2f38f2148601","newName":"Jane Doe","newEmail":"jane_example@gmail.com","newAdminStatus":true}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful response. Returns an object containing user information.","content":{"application/json":{"schema":{"type":"object","properties":{"user":{"type":"object","description":"The parameters related to the user. This gives information about the user.\n","properties":{"_id":{"type":"string","description":"The ID of the user.\n"},"name":{"type":"string","description":"The name of the user.\n"},"email":{"type":"string","format":"email","description":"The email address of the user.\n"},"password":{"type":"string","description":"The encrypted password of the user.\n"},"admin":{"type":"boolean","description":"The administrtive privilege of the user.\n"},"__v":{"type":"integer","description":"The version of the user. The version increases whenever the account is modified.\n"}}}},"example":{"user":{"_id":"674605a2a18c2f38f2148601","name":"Jane Doe","email":"jane_example@gmail.com","password":"$2a$10$eaixU5.H3PFYW.9V6NM8A.A.CPnFHtbcWPWsp/I1NWsfxqIG6s87K","admin":false,"__v":0}}}}}},"400":{"description":"See message description."},"500":{"description":"see message description."}}}
+>
+  
+</StatusCodes>
+
+
+      

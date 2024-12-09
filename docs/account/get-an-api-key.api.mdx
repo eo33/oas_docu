@@ -1,0 +1,71 @@
+---
+id: get-an-api-key
+title: "Get an API key"
+description: "This endpoint allows you to login to an account and retrieve an API key."
+sidebar_label: "Get an API key"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVltT4kgU/itdp+bJykJQFM3TIjhuGBUvqKOOZTWdE9KYdMfuDhoo/vtWJwERmampmn1YnkL36e/cvnOZQYCaKZ4aLgV4MIi4JiiCVHJhCI1j+apJLjNiJInliAv7QQWhjMnMSoiAKDSK4wTtefvcJ8+Y18ABQ0cavAdoZyYCB641Kg2PDih8yVCbQxnk4M3W9LcFkcMxMkOYFIZywcWImAgr5QEaymNd+yGgBOIKA/CMytAB+wKFsaA0TWPOqAWtj7VFnoFmESbUfpk8RfCgVPQB6AEwoTwGB1Kq9atUgbU4VTJFZThq+7qUeIfRRnExAgdCqRJqwFtirIcWSXFDaBAo1JrIsHAt06isR/MVrRvgP6MtpBdAVVIKrLkD+EaTNMYVm2EsI/EUSGxs/z2yRzUmk1VnPWhs7zR392BufzYyOpVCl45vu+7nhF1ljKHWYRaThXCNXKLJlNCWEJuzWdGkoI/9z0UZPC4FoUOZmffAwB8k9mPijHxG8XuRXdiXaQwKxmcmQmGsZiyMtgdS8Sl+CDz5Ia61PeJ6CWFfFyEqJAMehqhQmGWR6Sr11tlNPmxKu6IJGlSaKIypKU1cBowUNTziE9S/imtRQh8D9MR/k3h+dwN3BU3w955byQ0A/5/CQsFUntrArpfYCiQNEr5Kp6GUMVKxEbCQ5doowydIUsUnPMbRpiA8PU1WMLkwOEK1EXOCStu8rmKQ1QsumEKqUZPXCAVOUK2SlXBNEhnwkGNQdoy1nlGVC2Dei4bHjPd5z7+e+o0z7mtfXO6yjr/nP6ffbzq9gxrmvQbbvsn9cdryk/jZH0t+NmZuvxuN726PmvfHF2/3yd30vnsW342f3bPBxZvPX/nd7aWht03eF5d5cHtzcNLppXffL3h/fLRzOvWbp13W7HePtJ/cNK3C0wGbno5H7ul01Dz97tbo18PueKcpsuzs2RzsHrcaF8OT1rfeQJqT/OzIPckODr9h837ianivsYLosNdq7u8zSveDoBGGO8EODg+au80GLLgMBrUp2ApLdhZXT/biqUjqz/rol236peF+ae217q+mA95xe0ltP633kvytgS+C8Zdb0TruXHfbdb/VHvLBKHn5J+yxehJ2YEmucrAVnHDnVU9ubmzDiCRBrekIycpNzVJqd9MD/dMHcwcSNJG0XqRSF32Umgg8qNuuVy8mMTigUVmmgfcwg0zZ0ETGpNqr102EYaYEN5nCoZK6is5HA86VDDJWdKYSCebOOlAsGY0jqY2367ruJ4gTe718/WhNYpniJr+yE6Hsae1z/xvmKyVFU24PHLDxhQhpUNRXlfF21deLlrnJ5gkP0C5EarnqVNPWTqPL99Xm6E+GrzUulJ+TVnT2kMe4mKflUOmnKKw1OkXGw2o8ahLKsuDbTDJb8O1zv2iNW1u2S3xdZIgcKqm3toqVjRtrMny+J+2qayx0XX3QBQ5UXcd6UXNrbtF0pTYJLXpkFd5jNCtb4np8Z++T/j9dRMvEG3wz9TSmvBy3qhg1JbMfgJZLasntRwcs6ez5bDakGq9VPJ/b45cMVQ7ew6MDE6o4HdpwPTzOnQWRbDFYzzzolK78NbDarXiclfRbW2As68sXbcYwNb+UfVypzfP+1QAcGFZ7dCID+0bRV7vR0lfwAByQaZkfb1aezSCmYpTRkZUtMe3vX32pIgU=
+sidebar_class_name: "post api-method"
+info_path: account/the-furniture-bros-account-openapi-specifications
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get an API key"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/auth/login"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This endpoint allows you to login to an account and retrieve an API key.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"An object containing the login details.\n","required":true,"content":{"application/json":{"schema":{"type":"object","required":["email","password"],"properties":{"email":{"type":"string","format":"email","description":"The email address of the user.\n"},"password":{"type":"string","description":"The password of the account.\n"}},"example":{"email":"john_doe12@gmail.com","password":"123456"}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful response. Returns an object containing the API key and the information about the user.","content":{"application/json":{"schema":{"type":"object","properties":{"token":{"type":"string","description":"The API key used to authenticate and authorize the account. \nUse this API key to access the different endpoints.\n"},"user":{"type":"object","description":"The parameters related to the user. This gives information about the user.\n","properties":{"_id":{"type":"string","description":"The ID of the user.\n"},"name":{"type":"string","description":"The name of the user.\n"},"email":{"type":"string","format":"email","description":"The email address of the user.\n"},"password":{"type":"string","description":"The encrypted password of the user.\n"},"admin":{"type":"boolean","description":"The administrtive privilege of the user.\n"},"__v":{"type":"integer","description":"The version of the user. The version increases whenever the account is modified.\n"}}}},"example":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjc0ODhjYWE4ZGQxZmYzZDNlYjk0NTQxIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE3MzI4MDc4ODEsImV4cCI6MTczMjg0Mzg4MX0.aFBDj34nuuNkt95G71QbL7KJTotLyNE0Lu9BKe4Zv0s","user":{"_id":"67488caa8dd1ff3d3eb94541","name":"test name","email":"name_test_admin@gmail.com","password":"$2a$10$767ZSzTiC0Jm.8p/Jmyx1eqnciqWn7GCUDA/I7AbiTgmqHfJc/mfC","admin":true,"__v":0}}}}}},"400":{"description":"See message description."},"500":{"description":"see message description."}}}
+>
+  
+</StatusCodes>
+
+
+      
